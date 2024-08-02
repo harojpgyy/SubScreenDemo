@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SubScreenDemo</string>
+    <string-array name="spinner_video">
+        <item>video_bak.mp4</item>
+        <item>1118-90s.mp4</item>
+    </string-array>
+
+</resources>
