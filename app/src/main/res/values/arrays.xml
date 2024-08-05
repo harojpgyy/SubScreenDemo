@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_video">
+        <item>video_bak.mp4</item>
+        <item>1118-90s.mp4</item>
+    </string-array>
+</resources>

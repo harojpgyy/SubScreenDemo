@@ -36,8 +36,8 @@ public class SubVideoPresentation extends Presentation {
         try {
             mMediaPlayer.setDataSource(mFd.getFileDescriptor(), mFd.getStartOffset(), mFd.getLength());
             mMediaPlayer.setVideoScalingMode(MediaPlayer.VIDEO_SCALING_MODE_SCALE_TO_FIT);//缩放模式
-            mMediaPlayer.setLooping(true);//设置循环播放
-            mMediaPlayer.prepareAsync();//异步准备
+            mMediaPlayer.setLooping(true);
+            mMediaPlayer.prepareAsync();
             mMediaPlayer.setOnPreparedListener(mp -> {
                 mp.start();
                 mPlayerInitialized = true;

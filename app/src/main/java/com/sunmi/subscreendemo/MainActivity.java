@@ -48,8 +48,8 @@ public class MainActivity extends AppCompatActivity {
      */
     private void startPlayer() {
         if (mVideoPlayerInitialized) {
-            mVideoPlayer.setLooping(true);//设置循环播放
-            mVideoPlayer.prepareAsync();//异步准备
+            mVideoPlayer.setLooping(true);
+            mVideoPlayer.prepareAsync();
             mVideoPlayer.start();
         } else {
             try {
@@ -58,8 +58,8 @@ public class MainActivity extends AppCompatActivity {
                 AudioAttributes audioAttributes = new AudioAttributes.Builder().setLegacyStreamType(AudioAttributes.USAGE_MEDIA).build();
                 mVideoPlayer.setAudioAttributes(audioAttributes);
                 mVideoPlayer.setVideoScalingMode(MediaPlayer.VIDEO_SCALING_MODE_SCALE_TO_FIT);//缩放模式
-                mVideoPlayer.setLooping(true);//设置循环播放
-                mVideoPlayer.prepareAsync();//异步准备
+                mVideoPlayer.setLooping(true);
+                mVideoPlayer.prepareAsync();
                 mVideoPlayer.setOnPreparedListener(mp -> {
                     mp.start();
                     mVideoPlayerInitialized = true;
@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
                         mBinding.subStopVideo.setEnabled(true);
                         mSubDisplayState.put(mSubDisplayName, 1);
                     } else {
-                        Toast.makeText(getBaseContext(), "未接入副屏", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getBaseContext(), "Not connected to the secondary screen", Toast.LENGTH_LONG).show();
                     }
                 }
             } catch (IOException e) {

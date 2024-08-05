@@ -1,8 +1,7 @@
 <resources>
     <string name="app_name">SubScreenDemo</string>
-    <string-array name="spinner_video">
-        <item>video_bak.mp4</item>
-        <item>1118-90s.mp4</item>
-    </string-array>
-
+    <string name="sub_operation">Sub Display Operation:</string>
+    <string name="video_play">start play video</string>
+    <string name="video_stop">Stop play video</string>
+    <string name="main_operation">Main Display Operation:</string>
 </resources>
